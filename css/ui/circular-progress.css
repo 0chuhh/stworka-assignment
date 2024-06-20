@@ -1,0 +1,50 @@
+.circular-progress {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --progress:80;
+	--size: 60px;
+	--half-size: calc(var(--size) / 2);
+	--stroke-width: 1px;
+	--radius: calc((var(--size) - var(--stroke-width)) / 2);
+	--circumference: calc(var(--radius) * pi * 2);
+	--dash: calc((var(--progress) * var(--circumference)) / 100);
+    width: max-content;
+}
+
+.circular-progress svg {
+    width: var(--size);
+    height:var(--size);
+}
+
+.circular-progress circle {
+	cx: var(--half-size);
+	cy: var(--half-size);
+	r: var(--radius);
+	stroke-width: var(--stroke-width);
+	fill: none;
+	stroke-linecap: round;
+}
+
+.circular-progress circle.bg {
+	stroke: #FFFFFF80;
+}
+
+.circular-progress circle.fg {
+	transform: rotate(-90deg);
+	transform-origin: var(--half-size) var(--half-size);
+	stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
+	transition: stroke-dasharray 0.3s linear 0s;
+	stroke: #ffffff;
+}
+
+.circular-progress__text{
+    position: absolute;
+    font-size: 20px;
+    line-height: 30px;
+    color:#fff;
+}
+
+
+/* 414 научное управление */
