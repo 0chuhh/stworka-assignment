@@ -1,0 +1,18 @@
+@import url("./ui/index.css");
+@import url("./vars.css");
+* {
+    font-family: "Inter", sans-serif;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 30px;
+}
+
+main {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
