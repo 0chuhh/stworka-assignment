@@ -1,0 +1,35 @@
+.card {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.card__summary {
+    display: flex;
+    gap: 20px
+}
+
+.card__summary-text{
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card__title{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.card__hint {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
