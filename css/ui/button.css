@@ -1,0 +1,21 @@
+.button {
+	padding: 10px 32px 10px 32px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	font-size: 14px;
+	line-height: 20px;
+	cursor: pointer;
+	border: none;
+    transition: all .3s ease-in-out;
+}
+
+.button-secondary {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+}
+.button:hover {
+	filter: brightness(95%);
+}
+.button:active {
+	filter: brightness(105%);
+}
